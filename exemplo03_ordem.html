@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem dos valores</title>
+    <script>
+        function ordenar(){
+            let a = parseInt(f.e1.value);
+            let b = parseInt(f.e2.value)
+            if (a>b) {
+                f.saida.value = a;
+                f.saida2.value = b;
+            }
+            else {
+                f.saida1.value = b;
+                f.saida2.value = a;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        Valor de n1 <input type="number" name = "e1"><br>
+        Valor de n2 <input type="number" name = "e2"><br>
+        <input type="button" value="Ordenar" onclick="ordenar()"><br><br>
+        Saída Ordenada: <br>
+        <input type="text" readonly name="saida1"><br>
+        <input type="text" readonly name="saida2"><br>
+    </form>
+</body>
+</html>

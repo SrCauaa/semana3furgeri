@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simula a exclusão de um registro</title>
+<script>
+    function excluir(){
+        let resp = confirm('confirma a exclusão do produto?');
+        return resp
+    } 
+</script>
+</head>
+<body>
+    <button onclick="let r = excluir();
+     if(r==true) alert('Exclusão corfimada!');
+    else alert('Exclusão cancelada')">Excluir 01</button>
+
+        <button onclick="let re = excluir();
+        (re==true)? alert('Exclusão corfimada!'):
+       alert('Exclusão cancelada')">Excluir 02</button>
+
+
+           <button onclick="excluir()?alert('Exclusão corfimada!'):
+          alert('Exclusão cancelada')">Excluir 03</button>
+</body>
+</html>

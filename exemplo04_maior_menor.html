@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e menor dentre diversos valores</title>
+<script>function processar(){
+    let a = parseInt(f.n1.value);
+    let b = parseInt (f.n2.value);
+    let c = parseInt(f.n3.value);
+    let d = parseInt(f.n4.value);
+    let e = parseInt(f.n5.value);
+    maior = a;
+    menor = a;
+    if(b > maior) maior = b;
+    if(c > maior) maior = c;
+    if(d > maior) maior = d;
+    if(e > maior) maior = e;
+    if(b < maior) maior = b;
+    if(c < maior) maior = c;
+    if(d < maior) maior = d;
+    if(e < maior) maior = e;
+    f.saida_maior.value = maior;
+    f.saida_menor.value = menor;
+    
+}
+</script>
+</head>
+<body>
+    <form name="f">
+        Valor de n1: <input type="number" name="n1"><br>
+        Valor de n2: <input type="number" name="n2"><br>
+        Valor de n3: <input type="number" name="n3"><br>
+        Valor de n4: <input type="number" name="n4"><br>
+        Valor de n5: <input type="number" name="n5"><br>
+        Maior: <input type="text" readonly name="saida_maior"><br> 
+        Menor: <input type="text" readonly name="saida_menor"><br> 
+    </form>
+    <button onclick="processar ()">Processar</button><br><br>
+</body>
+</html>

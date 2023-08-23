@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica a origem de um morador</title>
+</head>
+<script>    function processar2(){
+    let resp = f.estado.value;
+    (resp == 'SP')?f.txt.value = 'Paulista':
+    (resp == 'RJ')?f.txt.value = 'Fluminense':
+    (resp == 'ES')?f.txt.value = 'Capixaba':
+    (resp == 'RS')?f.txt.value = 'Gaúcho':
+    f.txt.value = 'selecione uma opção';
+}
+    function processar(){
+        let resp = f.estado.value;
+        //alert(resp);
+        if(resp=='SP')f.txt.value = 'Paulista';
+        else if(resp=='RJ')f.txt.value = 'Fluminense';
+        else if(resp=='ES')f.txt.value = "Capixaba";
+        else if(resp=='RS')f.txt.value = 'Gaúcho';
+        else f.txt.value = 'Selecione uma opção';
+ 
+    }
+</script>
+<body>
+    <form name="f">
+        Selecione o estado de origem:
+        <select name="estado">
+            <option selected value="selecione">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="ES">Espírito Santos</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <input type="button" value="Processar" onclick="processar()">
+        <input type="button" value="Processar" onclick="processar2()">
+        <input type="text" readonly name="txt">
+    </form>
+</body>
+</html>

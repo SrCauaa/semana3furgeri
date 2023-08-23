@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function processar(){
+        let maior = f.n[0].value;
+        let menor = f.n[0].value;
+        //alert(f.n.length);
+        for (let i=1; i<f.n.lenght; i++){
+            //alert(f.n[i].value);
+            if(parseInt(f.n[1].value) > maior) maior = parseInt(f.n[i].value);
+            if(parseInt(f.n[1].value) < menor) menor = parseInt(f.n[i].value);
+        }
+         f.saida_maior.value = maior;
+         f.saida_menor.value = menor;
+    }
+</script>
+</head>
+<body>
+    <form name="f">
+        Valor de n1: <input type="number" name="n"><br>
+        Valor de n2: <input type="number" name="n"><br>
+        Valor de n3: <input type="number" name="n"><br>
+        Valor de n4: <input type="number" name="n"><br>
+        Valor de n5: <input type="number" name="n"><br>
+        Valor de n6: <input type="number" name="n"><br>
+        Valor de n7: <input type="number" name="n"><br>
+        Valor de n8: <input type="number" name="n"><br>
+        Valor de n9: <input type="number" name="n"><br>
+        Valor de n10: <input type="number" name="n"><br>
+        Valor de n11: <input type="number" name="n"><br>
+        Valor de n12: <input type="number" name="n"><br>
+        Valor de n13: <input type="number" name="n"><br>
+        Valor de n14: <input type="number" name="n"><br>
+        Valor de n15: <input type="number" name="n"><br>
+        Valor de n16: <input type="number" name="n"><br>
+        Valor de n17: <input type="number" name="n"><br>
+        Valor de n18: <input type="number" name="n"><br>
+        Valor de n19: <input type="number" name="n"><br>
+        Valor de n20: <input type="number" name="n"><br>
+        Maior: <input type="text" readonly name="saida_maior">
+        Menor: <input type="text" readonly name="saida_menor">
+    </form>
+    <button onclick="processar()" name="processar">processar</button>
+</body>
+</html>
